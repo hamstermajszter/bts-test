@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+button {
+  position: fixed;
+  top:0;
+  right: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#canvas {
+  width: 1920px;
+  height: 950px;
+  display: flex;
+}
+
+#overlay {
+  width: 924px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 0 4px #fff;
+  border-radius: 20px;
+  border: 11px solid #252525;
+  overflow: hidden;
+  transform: rotateY(90deg);
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 140px;
+  height: 122px;
+  line-height: 28px;
+  font-size: 35px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 3px hsla(0,0,14, 0.6);
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 59px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: white;
+  border-top: 11px solid #252525;
+  border-bottom: 11px solid #252525;
+}
+
+#talents {
+  color: white;
+  display: flex;
+  flex-direction: row;
+
+  .talent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Yantramanav', sans-serif;
+    height: 122px;
+    font-weight: 500;
+    border-right: 7px solid #252525;
+    line-height: 28px;
+    font-size: 35px;
+    text-shadow: 2px 3px hsla(0,0,14, 0.6);
+    flex: 1;
+
+    &:last-of-type {
+      border-right: 0px;
+    }
+  }
+}
